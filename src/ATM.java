@@ -2,6 +2,6 @@
 public class ATM {
 	public static void main (String [] args)
 	{
-		System.out.println ("teASDFASDFst");
+		System.out.println ("piss");
 	}
 }
