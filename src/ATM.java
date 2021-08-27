@@ -1,7 +1,14 @@
-
+import java.util.*;
 public class ATM {
-	public static void main (String [] args)
-	{
-		System.out.println ("piss");
+	private HashMap<String, Double> accounts = new HashMap<String, Double>();
+	
+	public void deposit (double amount, String id) {
+		if (accounts.containsKey(id)) {
+			accounts.put(id, (double)accounts.get(id) + amount);
+		}
+		else {
+			accounts.put(id, amount);
+		}
 	}
+	
 }
